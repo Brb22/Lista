@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*@keyframes animação{
+    from {color: rgb(255, 0, 0);}
+    from{ color: rgb(238, 255, 0);}
+}*/
+
+@keyframes botao {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+
+button:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+/*.titulo{
+  text-align: center;
+  border-style:double;
+  text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.596);
+  background-color: rgba(20, 16, 11, 0.459);
+  font-size: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.63);
+  background: rgb(120, 120, 180);
+    margin: 0px 0px 50px;
+    animation: normal;
+    animation-name: animação; 
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+  }
+
+
+body{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./LISTA-DE-COMPRAS.jpg');
+    background-size: 100%;
+}
+
+.one{
+    background-color: rgba(74, 52, 110, 0.932);
+    animation: normal;
+    animation-name: animação; 
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    width: 100px;  
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    border-style:dashed;
+    margin: auto;
+    
+    
+}*/
+
+.botão {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 30px 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 100px;
+    background-color: rgba(255, 34, 244, 0.205);
+    border-radius: 10px;
+    text-align: center;
+    color: #fbff09;
+}
+
+
+.txt-animado {
+    font-size: 50px;
+    font-weight: 300;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border: 100%;
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: #ff007b;
+    animation: palavras 20s infinite;
+
+}
+
+@keyframes palavras {
+
+    0%,
+    20% {
+        content: "Seja bem vindo!";
+    }
+
+    21%,
+    40% {
+        content: "Não esqueca de nada";
+    }
+
+    41%,
+    60% {
+        content: "Crie sua lista";
+    }
+
+    61%,
+    80% {
+
+        content: "Aproveite as ofertas";
+    }
+
+    81%,
+    100% {
+        content: " BOAS COMPRAS!";
+    }
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 110%;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 18px);
+    background-color: #ecdde8;
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 3px solid #ff007b;
+
+
+    }
+}
+
+@keyframes digita {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 18px);
+    }
+
+}
+
+body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(4, 4, 7);
+    background: url(./CHECK\ FRUT.jpg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+}

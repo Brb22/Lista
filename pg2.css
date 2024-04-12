@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    /*background-color: #ddb6a4de ;*/
+    background-image: url(fruit-5131050_960_720.jpg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.39);
+    text-align: center;
+    width: 650px;
+    border-radius: 10px;
+    margin: 150px auto 0;
+    padding: 30px;
+    
+}
+
+
+
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body{
+    background-color: bisque;
+    
+    
+}
+
+.input-task{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
+
+.button-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: bold ;
+}
+
+.button-task:hover{
+    transform: scale(1.30, 1.30);
+}
+
+.button-task:active{
+    opacity: 0.5;
+}
+
+.button-task::after{
+    content: "";
+    position: absolute;
+    opacity: 1;
+
+}
+
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.task{
+    background-color: #ce6400ec;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer; 
+}
+
+.task:hover{
+    transform: scale(1.15, 1.15);
+}
+
+p{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-weight: bold
+
+}
+
+.task:hover img {
+    opacity: 1;
+
+}
+
+
+.voltar{
+    font-size: 19px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.done{
+    background-color: #ff0000;
+    text-decoration:line-through;
+}
